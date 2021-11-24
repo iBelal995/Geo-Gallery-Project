@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
         <entry key="..\:/Users/albaq/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_dialog.xml" value="0.1578125" />
         <entry key="..\:/Users/albaq/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_favorite.xml" value="0.14375" />
+
+        <entry key="..\:/Users/MSI/Desktop/GeoGalleryProject/app/src/main/res/layout/activity_splash.xml" value="0.2828125" />
+
       </map>
     </option>
   </component>
