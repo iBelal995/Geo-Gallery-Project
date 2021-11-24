@@ -1,4 +1,4 @@
-package com.example.geogalleryproject.view
+package com.example.geogalleryproject.view.main
 
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
