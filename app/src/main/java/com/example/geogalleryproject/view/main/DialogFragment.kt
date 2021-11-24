@@ -1,4 +1,4 @@
-package com.example.geogalleryproject.view
+package com.example.geogalleryproject.view.main
 
 import android.app.DialogFragment
 import android.os.Bundle

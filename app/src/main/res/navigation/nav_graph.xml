@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/favoriteFragment">
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.geogalleryproject.view.main.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.geogalleryproject.view.main.HomeFragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.geogalleryproject.view.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/splash"
+        android:name="com.example.geogalleryproject.view.Splash"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+</navigation>

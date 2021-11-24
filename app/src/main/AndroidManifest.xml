@@ -14,10 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GeoGalleryProject" >
         <activity
-            android:name=".view.main.Splash"
+            android:name=".view.Splash"
             android:exported="true" />
         <activity
-            android:name=".view.main.MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
