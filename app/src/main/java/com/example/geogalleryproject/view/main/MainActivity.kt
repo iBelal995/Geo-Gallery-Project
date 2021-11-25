@@ -13,6 +13,8 @@ import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
+
+    // this line will be deleted
     private val TAG = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
