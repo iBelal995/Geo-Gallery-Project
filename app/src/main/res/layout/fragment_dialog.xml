@@ -8,11 +8,7 @@
     tools:context=".view.main.DialogFragment">
 
     <ImageView
-<<<<<<< HEAD
         android:id="@+id/dialog_imageView"
-=======
-        android:id="@+id/imageView"
->>>>>>> 13e6da569103bb1c5f1e78061ae65ba6d92924e0
         android:layout_width="212dp"
         android:layout_height="202dp"
         android:layout_marginTop="48dp"

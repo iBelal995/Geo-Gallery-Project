@@ -4,11 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
-=======
->>>>>>> 13e6da569103bb1c5f1e78061ae65ba6d92924e0
     tools:context=".view.Splash">
 
     <ImageView

@@ -18,10 +18,9 @@
             android:exported="true" />
         <activity
             android:name=".view.Splash"
-<<<<<<< HEAD
+
             android:theme="@style/Splash"
-=======
->>>>>>> 13e6da569103bb1c5f1e78061ae65ba6d92924e0
+
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
