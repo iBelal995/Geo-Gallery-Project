@@ -6,7 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.geogalleryproject.R
+import com.example.geogalleryproject.databinding.ActivityMainBinding
 import com.google.android.gms.location.LocationServices
 import java.lang.Exception
 
@@ -15,11 +21,13 @@ class MainActivity : AppCompatActivity() {
 
     // this line will be deleted
     private val TAG = "MainActivity"
-
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var navControllor: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         checkPermission()
 
         var fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
@@ -36,6 +44,16 @@ class MainActivity : AppCompatActivity() {
                 Log.d(TAG,e.message.toString())
             }
         }
+    val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+    navControllor = navHostFragment.navController
+        NavigationUI.setupWithNavController(binding.homeBottomNavigation,navControllor)
+    setupActionBarWithNavController(navControllor)
+
+
+
+
+
+
     }
 
     //check user location permission
@@ -47,5 +65,8 @@ class MainActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),0)
         }
     }
+
+
+
 
 }
