@@ -9,7 +9,6 @@ import com.example.geogalleryproject.R
 
 lateinit var handler: Handler
 
-
 class Splash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
