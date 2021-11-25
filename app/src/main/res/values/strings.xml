@@ -16,6 +16,7 @@
 
     <string name="home">home</string>
     <string name="favorite">favorite</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 
 </resources>
