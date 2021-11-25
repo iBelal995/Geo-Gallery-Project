@@ -16,8 +16,8 @@ class RoomServiceRepository(context: Context) {
 
     private val geoGalleryDao = database.geoGalleryDao()
 
-//    suspend fun insertPhotos(photos:List<Photo>) = geoGalleryDao.insertPhotos(photos)
-//    suspend fun getPhoto() = geoGalleryDao.getPhoto()
+    suspend fun insertPhotos(photos:List<Photo>) = geoGalleryDao.insertPhotos(photos)
+    suspend fun getPhoto() = geoGalleryDao.getPhoto()
 
     companion object{
 
