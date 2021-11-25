@@ -20,6 +20,8 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater,container,false)
         // Inflate the layout for this fragment
         return binding.root
+        binding.homeBottomNavigationView
+
     }
 
 
