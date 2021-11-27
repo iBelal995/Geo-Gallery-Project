@@ -8,11 +8,7 @@
         android:id="@+id/homeFragment"
         android:name="com.example.geogalleryproject.view.main.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_favoriteFragment"
-            app:destination="@id/favoriteFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.geogalleryproject.view.main.FavoriteFragment"

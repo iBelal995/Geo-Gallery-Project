@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.geogalleryproject.R
 
-  class DialogFragment :   DialogFragment () {
+  class DialogFragment : DialogFragment () {
 
 
       override fun onCreateView(
