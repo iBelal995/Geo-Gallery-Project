@@ -52,6 +52,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:clickable="true"
+            android:tint="@color/floatingbutton"
             app:backgroundTint="#FFFFFF"
             app:maxImageSize="30dp"
             app:srcCompat="@drawable/photocamera" />

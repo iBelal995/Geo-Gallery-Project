@@ -4,8 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/bottombarshape.xml" value="0.5703125" />
+        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/floatingshape.xml" value="0.5703125" />
         <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/selc.xml" value="0.5703125" />
         <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_dialog.xml" value="0.5353260869565217" />
+        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_favorite.xml" value="0.5353260869565217" />
+        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_home.xml" value="0.33061594202898553" />
+        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/home_item_layout.xml" value="0.5353260869565217" />
         <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/menu/bottomnav.xml" value="0.5541666666666667" />
       </map>
     </option>
