@@ -35,6 +35,7 @@
         android:layout_gravity="bottom"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/bottombarshape"
         app:itemIconSize="28dp"
         app:itemIconTint="@drawable/selc"
