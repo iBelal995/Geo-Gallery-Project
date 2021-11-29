@@ -3,15 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/bottombarshape.xml" value="0.5703125" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/floatingshape.xml" value="0.5703125" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/selc.xml" value="0.5703125" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/activity_main.xml" value="0.67" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_dialog.xml" value="0.5353260869565217" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_favorite.xml" value="0.5353260869565217" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/fragment_home.xml" value="0.33061594202898553" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/layout/home_item_layout.xml" value="0.5353260869565217" />
-        <entry key="..\:/Users/kingf/Desktop/Geo-Gallery-Project/app/src/main/res/menu/bottomnav.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/bottombarshape.xml" value="0.16317567567567567" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1918918918918919" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/layout/activity_main.xml" value="0.2264151024877837" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/layout/activity_maps.xml" value="0.19256756756756757" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/layout/activity_splash.xml" value="0.296875" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/layout/favorite_item_layout.xml" value="0.19256756756756757" />
+        <entry key="..\:/Users/MSI/Desktop/Geo-Gallery-Project/app/src/main/res/menu/bottomnav.xml" value="0.18243243243243243" />
       </map>
     </option>
   </component>

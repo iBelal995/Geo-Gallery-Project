@@ -35,7 +35,6 @@
         android:layout_gravity="bottom"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="3dp"
         android:background="@drawable/bottombarshape"
         app:itemIconSize="26dp"
         app:itemIconTint="@drawable/selc"
@@ -46,16 +45,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/bottomnav">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:clickable="true"
-            android:tint="@color/floatingbutton"
-            app:backgroundTint="#FFFFFF"
-            app:maxImageSize="30dp"
-            app:srcCompat="@drawable/photocamera" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
