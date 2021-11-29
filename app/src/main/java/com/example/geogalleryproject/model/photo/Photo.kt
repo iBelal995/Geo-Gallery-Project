@@ -1,4 +1,4 @@
-package com.example.geogalleryproject.model
+package com.example.geogalleryproject.model.photo
 
 
 import androidx.room.Entity

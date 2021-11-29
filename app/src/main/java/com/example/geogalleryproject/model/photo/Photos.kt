@@ -1,6 +1,7 @@
-package com.example.geogalleryproject.model
+package com.example.geogalleryproject.model.photo
 
 
+import com.example.geogalleryproject.model.photo.Photo
 import com.google.gson.annotations.SerializedName
 
 data class Photos(
