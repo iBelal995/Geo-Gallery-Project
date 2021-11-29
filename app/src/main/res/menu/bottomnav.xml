@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/h1"
+        android:icon="@drawable/ic_baseline_home_24"
         android:title="@string/home"
         android:visible="true" />
     <item
@@ -10,6 +10,6 @@
         android:title="Upload photo" />
     <item
         android:id="@+id/favoriteFragment"
-        android:icon="@drawable/favourite"
+        android:icon="@drawable/ic_baseline_star_border_24"
         android:title="@string/favorite" />
 </menu>
