@@ -1,4 +1,4 @@
-package com.example.geogalleryproject.model
+package com.example.geogalleryproject.model.photoinfo
 
 
 import com.google.gson.annotations.SerializedName
