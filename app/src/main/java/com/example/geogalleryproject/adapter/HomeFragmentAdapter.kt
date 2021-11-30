@@ -5,14 +5,18 @@ import android.view.LayoutInflater
 import androidx.recyclerview.widget.RecyclerView
 
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentManager
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
+import com.example.geogalleryproject.R
 import com.example.geogalleryproject.databinding.HomeItemLayoutBinding
 import com.example.geogalleryproject.model.photo.Photo
+import com.example.geogalleryproject.view.main.DialogFragment
 import com.example.geogalleryproject.view.main.HomeViewModel
 
-class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context) :
+class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context, val fragmentManager: FragmentManager) :
     RecyclerView.Adapter<HomeFragmentAdapter.MainViewHolder>() {
 
     val DIFF_CALL_BACK = object : DiffUtil.ItemCallback<Photo>(){
@@ -39,6 +43,12 @@ class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context) :
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val item = differ.currentList[position]
         holder.bind(item)
+        holder.itemView.setOnClickListener {
+            val dialogFragment = DialogFragment()
+            dialogFragment.show(fragmentManager,"")
+         //   it.findNavController().navigate(R.id.photo_dialog_fragment)
+        }
+
     }
 
     override fun getItemCount(): Int {

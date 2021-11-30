@@ -53,7 +53,7 @@ class HomeFragment : Fragment() {
 
         observers()
 
-        homeFragmentAdapter = HomeFragmentAdapter(geoGalleryViewModel, requireActivity())
+        homeFragmentAdapter = HomeFragmentAdapter(geoGalleryViewModel, requireActivity(),requireActivity().supportFragmentManager)
         binding.homeRecyclerView.adapter= homeFragmentAdapter
         geoGalleryViewModel.callPhoto()
     }

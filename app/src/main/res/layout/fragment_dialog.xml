@@ -8,6 +8,7 @@
     tools:context=".view.main.DialogFragment">
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewInfo"
         android:layout_width="0dp"
         android:layout_height="470dp"
         android:padding="10dp"
