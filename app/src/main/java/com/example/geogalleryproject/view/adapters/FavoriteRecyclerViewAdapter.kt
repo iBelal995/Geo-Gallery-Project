@@ -11,8 +11,9 @@ import androidx.recyclerview.widget.DiffUtil
 import com.example.geogalleryproject.R
 import com.example.geogalleryproject.database.GeoGalleryDao
 import com.example.geogalleryproject.databinding.FavoriteItemLayoutBinding
-import com.example.geogalleryproject.model.Photo
-import com.example.geogalleryproject.model.Photos
+
+import com.example.geogalleryproject.model.photo.Photo
+
 import com.example.geogalleryproject.view.FavoriteViewModel
 
 class FavoriteRecyclerViewAdapter( val list: List<FavoriteViewModel>, val favoriteViewModel: FavoriteViewModel) :

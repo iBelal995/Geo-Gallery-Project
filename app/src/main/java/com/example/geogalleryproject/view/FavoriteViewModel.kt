@@ -2,14 +2,12 @@ package com.example.geogalleryproject.view
 
 import android.content.ContentValues.TAG
 import android.util.Log
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.geogalleryproject.model.Photo
+import com.example.geogalleryproject.model.photo.Photo
 import com.example.geogalleryproject.repositories.ApiServicesRepository
 import com.example.geogalleryproject.repositories.RoomServiceRepository
-import com.example.geogalleryproject.view.adapters.FavoriteRecyclerViewAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -34,7 +32,7 @@ class FavoriteViewModel : ViewModel() {
 
 
                 response.run {
-                    favoritesLiveData.postValue(this)
+                    favoritesLiveData.postValue(response)
                     Log.d(TAG,this.toString())
                 }
 
