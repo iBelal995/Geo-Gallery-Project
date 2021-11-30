@@ -7,11 +7,11 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.geogalleryproject.view.main.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.geogalleryproject.view.main.FavoriteFragment"
-        android:label="fragment_favorite"
+        android:label="Favorite"
         tools:layout="@layout/fragment_favorite" />
 </navigation>

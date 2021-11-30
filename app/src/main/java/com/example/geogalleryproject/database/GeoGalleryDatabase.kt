@@ -2,8 +2,7 @@ package com.example.geogalleryproject.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.geogalleryproject.model.GeoGalleryModel
-import com.example.geogalleryproject.model.Photo
+import com.example.geogalleryproject.model.photo.Photo
 
 
 @Database(entities = [Photo::class], version = 2)

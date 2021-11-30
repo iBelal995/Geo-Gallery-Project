@@ -6,6 +6,9 @@
         android:title="@string/home"
         android:visible="true" />
     <item
+        android:icon="@drawable/logogeo"
+        android:title="Upload photo" />
+    <item
         android:id="@+id/favoriteFragment"
         android:icon="@drawable/ic_baseline_star_border_24"
         android:title="@string/favorite" />

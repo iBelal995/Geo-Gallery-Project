@@ -3,7 +3,7 @@ package com.example.geogalleryproject.repositories
 import android.content.Context
 import androidx.room.Room
 import com.example.geogalleryproject.database.GeoGalleryDatabase
-import com.example.geogalleryproject.model.Photo
+import com.example.geogalleryproject.model.photo.Photo
 import java.lang.Exception
 
 private const val DATABASE_NAME = "Geo-Gallery-Database"
