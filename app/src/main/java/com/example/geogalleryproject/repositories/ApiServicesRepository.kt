@@ -21,6 +21,7 @@ class ApiServicesRepository(context: Context) {
     suspend fun getImages(lat: Double, lon:Double ) = retrofitApi.getImages(lat, lon)
 
 
+
     companion object{
 
         private var instance: ApiServicesRepository? = null

@@ -1,10 +1,8 @@
 package com.example.geogalleryproject.database
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 import com.example.geogalleryproject.model.Photo
+import retrofit2.http.GET
 
 
 @Dao
@@ -16,4 +14,11 @@ interface GeoGalleryDao {
 
     @Query("SELECT * FROM photo")
     suspend fun getPhoto():List<Photo>
+
+    @GET("SELECT * FROM photo WHERE isFavorite")
+    suspend fun getFavorites():List<Photo>
+
+    @Update
+    suspend fun updateIsFavorite(photo: Photo)
+
 }
