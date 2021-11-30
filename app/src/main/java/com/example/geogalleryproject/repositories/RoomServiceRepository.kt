@@ -18,6 +18,8 @@ class RoomServiceRepository(context: Context) {
 
     suspend fun insertPhotos(photos:List<Photo>) = geoGalleryDao.insertPhotos(photos)
     suspend fun getPhoto() = geoGalleryDao.getPhoto()
+    suspend fun getFavorites() = geoGalleryDao.getFavorites()
+    suspend fun updateIsFavorite(photo: Photo) = geoGalleryDao.updateIsFavorite(photo)
 
     companion object{
 
