@@ -1,5 +1,7 @@
 package com.example.geogalleryproject.view.main
 
+import android.content.Intent
+import android.location.Location
 import android.os.Bundle
 
 import android.util.Log
@@ -23,6 +25,7 @@ import com.example.geogalleryproject.model.photo.GeoGalleryModel
 import com.example.geogalleryproject.model.photo.Photo
 
 private const val TAG = "HomeFragment"
+
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
@@ -54,36 +57,51 @@ class HomeFragment : Fragment() {
         observers()
 
         homeFragmentAdapter = HomeFragmentAdapter(geoGalleryViewModel, requireActivity())
-        binding.homeRecyclerView.adapter= homeFragmentAdapter
+        binding.homeRecyclerView.adapter = homeFragmentAdapter
         geoGalleryViewModel.callPhoto()
     }
 
-    fun observers(){
-        geoGalleryViewModel.photoLiveData.observe(viewLifecycleOwner,{
+    fun observers() {
+        geoGalleryViewModel.photoLiveData.observe(viewLifecycleOwner, {
+            binding.homeProgressBar.animate().alpha(0f).duration=1000
 
             homeFragmentAdapter.subList(photoList)
             photoList = it.photos.photo
+            binding.homeRecyclerView.animate().alpha(1f)
 
         })
 
-        geoGalleryViewModel.photoErrorLiveData.observe(viewLifecycleOwner,{
-            it?.let{
+        geoGalleryViewModel.photoErrorLiveData.observe(viewLifecycleOwner, {
+            it?.let {
                 Toast.makeText(requireActivity(), it, Toast.LENGTH_LONG).show()
-                Log.d(TAG,it)
+                Log.d(TAG, it)
                 geoGalleryViewModel.photoErrorLiveData.postValue(null)
 
             }
         })
 
-    }
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        requireActivity().menuInflater.inflate(R.menu.actionbarmenu, menu)
 
-        val searchItem = menu.findItem(R.id.app_bar_search)
-        val location = menu.findItem(R.id.app_bar_location)
-        val searchView = searchItem.actionView as SearchView
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.actionbarmenu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.app_bar_search -> {
+                Toast.makeText(requireContext(), "Search", Toast.LENGTH_SHORT).show()
+            }
+
+            R.id.app_bar_location -> {
+                val intent = Intent(activity, MapsActivity::class.java)
+                startActivity(intent)
+            }
 
         }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 }

@@ -2,9 +2,11 @@ package com.example.geogalleryproject.adapterimport
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.Menu
 import androidx.recyclerview.widget.RecyclerView
 
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
@@ -39,6 +41,7 @@ class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context) :
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val item = differ.currentList[position]
         holder.bind(item)
+
     }
 
     override fun getItemCount(): Int {
@@ -51,6 +54,13 @@ class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context) :
 
         fun bind(item: Photo){
             Glide.with(context).load(item.urlM).into(binding.homeImageView)
+
         }
+
+
+
     }
-}
+
+
+
+    }
