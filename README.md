@@ -1,16 +1,33 @@
 ![image](https://user-images.githubusercontent.com/91452283/140028219-e6c1e5a4-7e88-4e9a-86cb-1b1e76542cad.png)
 # Geo-Gallery-Project
-# Capstone Project 2 - Tuwaiq Academy
+
 
 ## Description : 
+Geo Gallery is a software media platform app that is used for sharing and managing online photos around the globe.
+<img src="https://user-images.githubusercontent.com/91452283/144279034-58888f2b-f144-408e-832c-5683afb91b4d.png" width="150" height="150">
+<hr>
+
+### Software development lifecycle
+
+<img src="https://user-images.githubusercontent.com/91452283/140063117-e6dfcae8-dc42-4300-89cd-cd760809c347.png" width="150" height="150">
+
+- Planning :Time mangment, Brain Storming.
+- Analysis :The requirements , what i need , what i am going to do , what if 
+- Design : [Figma](https://www.figma.com/file/bnciU8RcvZ6tcjbZu6B3YP/Geo-Gallery?node-id=0%3A1)
+- Implementation : Andriod Studio
+- Testing : Test the actions and the features
+- Maintanance : fixing any problems accure
 
 
+<hr>
 
 ### Technologies used
 - [Kotlin](https://developer.android.com/kotlin)
 - [android studio](https://developer.android.com/studio?gclid=Cj0KCQjww4OMBhCUARIsAILndv7dnvotv1KjpsvyCGg74yWzg7zXsTLeEz078nbHA6wWZbaUZSUWlGgaAuMNEALw_wcB&gclsrc=aw.ds)
 - [Matirial design](https://material.io/components?platform=android)
 - [Figma](https://www.figma.com/file/bnciU8RcvZ6tcjbZu6B3YP/Geo-Gallery?node-id=0%3A1)
+
+<hr>
 
 ### Libraries Used
 - [Architecture][1]
@@ -30,28 +47,16 @@
 * [Api](https://www.mulesoft.com/resources/api/what-is-an-api)
 * [Coroutines](https://developer.android.com/kotlin/coroutines?gclid=Cj0KCQiA15yNBhDTARIsAGnwe0X6_uiUGKPCcjYnxYqgNTosJ31FJI_HE0l4M_OBt_SfgY5OtwAcFMsaAu0uEALw_wcB&gclsrc=aw.ds)
 
-## 2- Link to wirefarmes and user Stories:
- Wireframes:
+<hr>
+
+## User stories
+* As a user I want to be able to show the photographs such that I can view them.
+
+* As a user, I want to view high-resolution photographs.
+
+* As a user, I want to be able to select a place that displays the photographs I desire in that location.
  
 
-
-User Stories: 
-
-* As a user I want to 
-
-* As a user I want to 
-
-* As a user I want to 
-
-* As a user I want to 
-
-* As a user I want to 
-
-* As a user I want to
-
-* As a user I want to 
-
-* As a user I want to 
 
 <hr>
 
