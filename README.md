@@ -3,6 +3,7 @@
 
 
 ## Description : 
+
 Geo Gallery is a software media platform app that is used for sharing and managing online photos around the globe.
 
 <img src="https://user-images.githubusercontent.com/91452283/144279034-58888f2b-f144-408e-832c-5683afb91b4d.png" width="150" height="150">
@@ -24,6 +25,7 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 <hr>
 
 ### Technologies used
+
 - [Kotlin](https://developer.android.com/kotlin)
 - [android studio](https://developer.android.com/studio?gclid=Cj0KCQjww4OMBhCUARIsAILndv7dnvotv1KjpsvyCGg74yWzg7zXsTLeEz078nbHA6wWZbaUZSUWlGgaAuMNEALw_wcB&gclsrc=aw.ds)
 - [Matirial design](https://material.io/components?platform=android)
@@ -32,6 +34,7 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 <hr>
 
 ### Libraries Used
+
 * [Architecture][1]
 * [Lifecycles][3] 
 * [LiveData][4]
@@ -52,6 +55,7 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 <hr>
 
 ## User stories
+
 * As a user I want to be able to access & browse the photos in easy way.
 * As a user, I want to view high-resolution photographs.
 * As a user, I want to be able to select a place that displays the photographs I desire in that location.
