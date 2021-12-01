@@ -67,15 +67,12 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 
 <hr>
 
-##  Unsolved problems
-
-<hr>
-
 ##  Favorite Functions
 
+
 <hr>
 
-##  Application 
+##  Upcoming features
 
 
 
