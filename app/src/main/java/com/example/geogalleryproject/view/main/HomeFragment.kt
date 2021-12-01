@@ -9,18 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
 
 import android.view.*
-import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.geogalleryproject.R
-import com.example.geogalleryproject.adapterimport.HomeFragmentAdapter
+import com.example.geogalleryproject.view.adapters.HomeFragmentAdapter
 import com.example.geogalleryproject.databinding.FragmentHomeBinding
-import com.example.geogalleryproject.model.photo.GeoGalleryModel
 import com.example.geogalleryproject.model.photo.Photo
 
 private const val TAG = "HomeFragment"

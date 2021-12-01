@@ -1,4 +1,4 @@
-package com.example.geogalleryproject.adapterimport
+package com.example.geogalleryproject.view.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,11 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
-import com.example.geogalleryproject.R
 import com.example.geogalleryproject.databinding.HomeItemLayoutBinding
 import com.example.geogalleryproject.model.photo.Photo
 import com.example.geogalleryproject.view.main.DialogFragment
@@ -34,7 +32,7 @@ class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context, va
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): HomeFragmentAdapter.MainViewHolder {
+    ): MainViewHolder {
 
         val binding= HomeItemLayoutBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return MainViewHolder(binding)
