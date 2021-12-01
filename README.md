@@ -52,14 +52,11 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 <hr>
 
 ## User stories
-* As a user I want to be able to show the photographs such that I can view them.
-
+* As a user I want to be able to access & browse the photos in easy way.
 * As a user, I want to view high-resolution photographs.
-
 * As a user, I want to be able to select a place that displays the photographs I desire in that location.
+* As a user, I want to be able to see the photographs that  previously downloaded, even if I don't have access to the internet.
  
-
-
 <hr>
 
 ## 3- My Development Process:
