@@ -74,6 +74,7 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 ##  Favorite Functions
 
 * Photos auto download:  photos will automatically download from current location 
+*  User friendly: easy to navigate 
 
 
 <hr>
@@ -82,7 +83,6 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 * Search bar: You can search photos by name 
 * Geofencing: You can pick a specific location and it will download photos for that specific location 
 * Favourite: You can add a photo to the favourite album
-* User friendly: easy to navigate 
 * Details: You can access the photo and see the date uploaded 
 
 
