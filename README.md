@@ -32,7 +32,7 @@ Geo Gallery is a software media platform app that is used for sharing and managi
 <hr>
 
 ### Libraries Used
-- [Architecture][1]
+* [Architecture][1]
 * [Lifecycles][3] 
 * [LiveData][4]
 * [Navigation][5] 
