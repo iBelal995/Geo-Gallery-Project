@@ -1,5 +1,6 @@
 package com.example.geogalleryproject.view.main
 
+import android.content.Intent
 import android.os.Bundle
 
 import android.util.Log
@@ -56,14 +57,16 @@ class HomeFragment : Fragment() {
         homeFragmentAdapter = HomeFragmentAdapter(geoGalleryViewModel, requireActivity(),requireActivity().supportFragmentManager)
         binding.homeRecyclerView.adapter= homeFragmentAdapter
         geoGalleryViewModel.callPhoto()
+
+
     }
 
     fun observers(){
         geoGalleryViewModel.photoLiveData.observe(viewLifecycleOwner,{
-
+            binding.homeProgressBar.animate().alpha(0f).duration=1000
             homeFragmentAdapter.subList(photoList)
             photoList = it.photos.photo
-
+            binding.homeRecyclerView.animate().alpha(1f)
         })
 
         geoGalleryViewModel.photoErrorLiveData.observe(viewLifecycleOwner,{
@@ -77,13 +80,22 @@ class HomeFragment : Fragment() {
 
     }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        requireActivity().menuInflater.inflate(R.menu.actionbarmenu, menu)
+        inflater.inflate(R.menu.actionbarmenu, menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.app_bar_search -> {
+                Toast.makeText(requireContext(), "Search", Toast.LENGTH_SHORT).show()
+            }
 
-        val searchItem = menu.findItem(R.id.app_bar_search)
-        val location = menu.findItem(R.id.app_bar_location)
-        val searchView = searchItem.actionView as SearchView
+            R.id.app_bar_location -> {
+                val intent = Intent(activity, MapsActivity::class.java)
+                startActivity(intent)
+            }
 
         }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 }
