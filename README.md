@@ -4,7 +4,9 @@
 
 ## Description : 
 Geo Gallery is a software media platform app that is used for sharing and managing online photos around the globe.
+
 <img src="https://user-images.githubusercontent.com/91452283/144279034-58888f2b-f144-408e-832c-5683afb91b4d.png" width="150" height="150">
+
 <hr>
 
 ### Software development lifecycle
