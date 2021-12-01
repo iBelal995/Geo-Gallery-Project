@@ -59,14 +59,12 @@ Geo Gallery is a software media platform app that is used for sharing and managi
  
 <hr>
 
-## 3- My Development Process:
-Planning : 
+### Screenshots Android Studio
 
-  *
+<img src="https://user-images.githubusercontent.com/91452283/144288879-6bd3113e-2e1a-4d10-b7e3-0e0151c61cf9.jpg" width="250" height="380">
+<img src="https://user-images.githubusercontent.com/91452283/144288639-0b7cd4c8-9a4d-4a4b-a178-753a5b544a61.jpg" width="250" height="380">
+<img src="https://user-images.githubusercontent.com/91452283/144288976-676beab4-2329-4a4b-a006-212a168a67fc.jpg" width="250" height="380">
 
-  *
-
-  *
 
 
 Designing :
