@@ -98,10 +98,6 @@ class MainActivity : AppCompatActivity() {
                 ),
                 0
             )
-        } else {
-            Toast.makeText(this, "Location permission needed", Toast.LENGTH_SHORT).show()
-
-
         }
     }
 

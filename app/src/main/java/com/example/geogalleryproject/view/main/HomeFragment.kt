@@ -50,10 +50,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        observers()
+
 
         homeFragmentAdapter = HomeFragmentAdapter(geoGalleryViewModel, requireActivity(),requireActivity().supportFragmentManager)
         binding.homeRecyclerView.adapter= homeFragmentAdapter
+        observers()
         geoGalleryViewModel.callPhoto()
 
 
@@ -62,9 +63,10 @@ class HomeFragment : Fragment() {
     fun observers(){
         geoGalleryViewModel.photoLiveData.observe(viewLifecycleOwner,{
             binding.homeProgressBar.animate().alpha(0f).duration=1000
-            homeFragmentAdapter.subList(photoList)
             photoList = it.photos.photo
-            binding.homeRecyclerView.animate().alpha(1f)
+            homeFragmentAdapter.subList(photoList)
+            Log.d(TAG,it.photos.toString())
+
         })
 
         geoGalleryViewModel.photoErrorLiveData.observe(viewLifecycleOwner,{
@@ -85,12 +87,10 @@ class HomeFragment : Fragment() {
             R.id.app_bar_search -> {
                 Toast.makeText(requireContext(), "Search", Toast.LENGTH_SHORT).show()
             }
-
             R.id.app_bar_location -> {
                 val intent = Intent(activity, MapsActivity::class.java)
                 startActivity(intent)
             }
-
         }
         return super.onOptionsItemSelected(item)
     }
