@@ -13,6 +13,9 @@ interface GeoGalleryDao {
 
     @Query("SELECT * FROM photo")
     suspend fun getPhoto():List<Photo>
+
+
+    //====================================================
     @Query("SELECT * FROM photo WHERE isFavorite")
     suspend fun getFavorites() : List<Photo>
 

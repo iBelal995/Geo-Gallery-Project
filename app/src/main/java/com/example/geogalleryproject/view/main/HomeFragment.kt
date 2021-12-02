@@ -12,6 +12,7 @@ import androidx.fragment.app.activityViewModels
 
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.MutableLiveData
 
 import com.example.geogalleryproject.R
 import com.example.geogalleryproject.view.adapters.HomeFragmentAdapter
@@ -26,6 +27,8 @@ class HomeFragment : Fragment() {
     private var photoList = listOf<Photo>()
     private val geoGalleryViewModel: HomeViewModel by activityViewModels()
     private lateinit var homeFragmentAdapter: HomeFragmentAdapter
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
