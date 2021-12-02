@@ -6,7 +6,9 @@ import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.AttributeSet
 import android.util.Log
+import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -30,12 +32,15 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navControllor: NavController
     private lateinit var sharedPreferences: SharedPreferences
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (Build.VERSION.SDK_INT >= 21) {
             window.navigationBarColor =
                 this.resources.getColor(R.color.white) // this is for the navigation bar color of the android system
         }
+
+
 
         sharedPreferences = getSharedPreferences("GeoApp", Context.MODE_PRIVATE)
 
@@ -57,13 +62,15 @@ class MainActivity : AppCompatActivity() {
                     editor.putFloat("lat", latitude.toFloat())
                     editor.apply()
 
-
-
                 }
+
             }catch (e:Exception){
                 Log.d(TAG,e.message.toString())
             }
         }
+
+
+
     val navHostFragment =
         supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
     navControllor = navHostFragment.navController
@@ -71,11 +78,13 @@ class MainActivity : AppCompatActivity() {
     setupActionBarWithNavController(navControllor)
 
 
-
-
-
-
+        binding.floatingActionButton2.setOnClickListener {
+            Toast.makeText(this, "UpComing Feature", Toast.LENGTH_SHORT).show()
+        }
     }
+
+
+
 
     //check user location permission
     fun checkPermission(){
@@ -101,9 +110,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     override fun onSupportNavigateUp(): Boolean {
         return navControllor.navigateUp()
 
     }
+
+
 
 }

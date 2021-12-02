@@ -50,8 +50,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         homeFragmentAdapter = HomeFragmentAdapter(geoGalleryViewModel, requireActivity(),requireActivity().supportFragmentManager)
         binding.homeRecyclerView.adapter= homeFragmentAdapter
         observers()
@@ -89,6 +87,7 @@ class HomeFragment : Fragment() {
             }
             R.id.app_bar_location -> {
                 val intent = Intent(activity, MapsActivity::class.java)
+                Toast.makeText(requireContext(), "UpComing Feature", Toast.LENGTH_SHORT).show()
                 startActivity(intent)
             }
         }

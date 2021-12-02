@@ -22,19 +22,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:text="Upcoming Feature"
                 android:textSize="34sp" />
 
             <ImageView
                 android:id="@+id/photo_dialog_fragment"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="300dp"
                 tools:src="@tools:sample/avatars" />
 
             <LinearLayout
