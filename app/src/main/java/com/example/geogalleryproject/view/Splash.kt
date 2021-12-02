@@ -8,6 +8,7 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.geogalleryproject.R
 import com.example.geogalleryproject.repositories.ApiServicesRepository
+import com.example.geogalleryproject.repositories.RoomServiceRepository
 
 lateinit var handler: Handler
 
@@ -16,6 +17,7 @@ class Splash : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         ApiServicesRepository.init(this)
+        RoomServiceRepository.init(this)
         setContentView(R.layout.activity_splash)
         if (Build.VERSION.SDK_INT >= 21) {
             window.navigationBarColor =

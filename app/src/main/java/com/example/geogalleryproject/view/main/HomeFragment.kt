@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import android.view.*
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.MutableLiveData
 
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
@@ -31,6 +32,8 @@ class HomeFragment : Fragment() {
     private var photoList = listOf<Photo>()
     private val geoGalleryViewModel: HomeViewModel by activityViewModels()
     private lateinit var homeFragmentAdapter: HomeFragmentAdapter
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
