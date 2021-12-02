@@ -18,6 +18,7 @@ class Splash : AppCompatActivity() {
 
         ApiServicesRepository.init(this)
         RoomServiceRepository.init(this)
+
         setContentView(R.layout.activity_splash)
         if (Build.VERSION.SDK_INT >= 21) {
             window.navigationBarColor =

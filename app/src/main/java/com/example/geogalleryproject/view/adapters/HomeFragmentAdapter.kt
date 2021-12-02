@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.geogalleryproject.databinding.HomeItemLayoutBinding
 import com.example.geogalleryproject.model.photo.Photo
 import com.example.geogalleryproject.view.main.DialogFragment
@@ -58,7 +59,7 @@ class HomeFragmentAdapter(val viewModel: HomeViewModel, val context: Context, va
     inner class MainViewHolder(val binding: HomeItemLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Photo){
-            Glide.with(context).load(item.urlM).into(binding.homeImageView)
+            Glide.with(context).load(item.urlM).diskCacheStrategy(DiskCacheStrategy.ALL).into(binding.homeImageView)
         }
     }
 }
